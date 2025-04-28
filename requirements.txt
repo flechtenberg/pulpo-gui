@@ -1,2 +1,2 @@
-pulpo-dev
+pulpo-dev[bw2]
 streamlit
