@@ -1,4 +1,4 @@
-# pulpo_gui/app.py
+# pulpo-gui/app.py
 import os
 import re
 
@@ -468,3 +468,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
