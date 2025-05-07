@@ -6,7 +6,7 @@ A desktop‐packaged Streamlit application for Life Cycle Optimization using [Pu
 
 If you just want to use the application without installing anything else:
 
-1. Download the latest `pulpo-gui.exe` from the \[Releases page]
+1. Download the latest `pulpo-gui.exe` from the [Release Page](https://github.com/flechtenberg/pulpo-gui/releases/tag/v0.1.0)
 2. Double‐click `pulpo-gui.exe`.
 3. Your default browser will automatically open to `http://localhost:8501` where the GUI is available.
 
