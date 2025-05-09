@@ -148,6 +148,13 @@ def main():
         width=300,
     )
 
+    # ─── Example DB installer ──────────────────────────────────────────────
+    if st.button("Install Example DB"):
+        with st.spinner("Installing example database…"):
+            pulpo.install_rice_husk_db()
+        st.success("✅ Example database installed!")
+    # ──────────────────────────────────────────────────────────────────────
+
     st.title("Life Cycle Optimization")
 
     # --- Project selector ---
