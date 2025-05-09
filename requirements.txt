@@ -1,2 +1,3 @@
 pulpo-dev[bw2]
 streamlit
+jupyter-server-proxy
