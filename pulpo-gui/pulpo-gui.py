@@ -28,7 +28,7 @@ def get_dynamic_lists(project_name):
     bd.projects.set_current(project_name)
     # All non-biosphere processes
     processes = sorted({
-        f"{a['reference product']} {a['name']} {a['location']} [{db}] [key: {a.key}]"
+        f"{a.get('reference product', 'unknown')} {a.get('name', 'unknown')} {a.get('location', 'unknown')} [{db}] [key: {getattr(a, 'key', 'unknown')}]"
         for db in bd.databases
         if db != "biosphere3"
         for a in bd.Database(db)
