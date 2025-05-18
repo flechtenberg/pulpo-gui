@@ -6,7 +6,7 @@ A desktop‐packaged Streamlit application for Life Cycle Optimization using [Pu
 
 If you just want to use the application without installing anything else:
 
-1. Download the latest `pulpo-gui.exe` from the [Release Page](https://github.com/flechtenberg/pulpo-gui/releases/tag/v0.1.0)
+1. Download the latest `pulpo-gui.exe` from the [Release Page](https://github.com/flechtenberg/pulpo-gui/releases/tag/v0.1.1)
 2. Double‐click `pulpo-gui.exe`.
 3. Your default browser will automatically open to `http://localhost:8501` where the GUI is available.
 
@@ -73,16 +73,7 @@ If you need to repackage the app (e.g., after code changes), use PyInstaller (`p
 Run this command from the project root:
 
 ```bash
-pyinstaller --onefile \
-  --icon=pulpo-gui/data/Pulpo.ico \
-  --add-data "pulpo-gui/data;data" \
-  --add-data "pulpo-gui/pulpo-gui.py;." \
-  --collect-all streamlit \
-  --collect-all pyomo \
-  --collect-all bw2data \
-  --collect-all pulpo \
-  --collect-all highspy \
-  launcher.py
+pyinstaller --onefile --icon=pulpo-gui/data/Pulpo.ico --add-data "pulpo-gui/data;data" --add-data "pulpo-gui/pulpo-gui.py;." --collect-all streamlit --collect-all pyomo --collect-all bw2data --collect-all pulpo --collect-all highspy pulpo-gui/launcher.py
 ```
 
 * **`--onefile`**: packages everything into a single `exe`.
